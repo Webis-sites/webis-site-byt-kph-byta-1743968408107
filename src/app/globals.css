@@ -8,6 +8,9 @@
   --background-end-rgb: 255, 255, 255;
   --primary-color: #FFEEAD;
   --secondary-color: #588C7E;
+
+  --header-height: 80px;
+  --transition-speed: 0.3s;
 }
 
 html {
