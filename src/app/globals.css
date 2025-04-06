@@ -15,6 +15,9 @@
   --animation-duration: 0.3s;
 
   --font-family-hebrew: 'Heebo', 'Assistant', sans-serif;
+
+  --primary-light: #FFF5D6;
+  --secondary-light: #7AB3A4;
 }
 
 html {
