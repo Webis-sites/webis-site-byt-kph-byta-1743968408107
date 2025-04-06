@@ -20,6 +20,8 @@
   --secondary-light: #7AB3A4;
 
   --form-transition: 0.3s;
+
+  --font-cafe: 'Heebo', 'Assistant', sans-serif;
 }
 
 html {
