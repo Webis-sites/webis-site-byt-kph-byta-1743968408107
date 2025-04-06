@@ -9,6 +9,7 @@ import ServicesSection from '../components/ServicesSection';
 import PortfolioSection from '../components/PortfolioSection';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
     <PortfolioSection />
     <ContactForm />
     <Footer />
+    <ScrollToTop />
   </main>
       
       <footer className="py-6 bg-gray-100 dark:bg-gray-800">
