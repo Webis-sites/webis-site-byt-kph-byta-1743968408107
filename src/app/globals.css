@@ -18,6 +18,8 @@
 
   --primary-light: #FFF5D6;
   --secondary-light: #7AB3A4;
+
+  --form-transition: 0.3s;
 }
 
 html {
