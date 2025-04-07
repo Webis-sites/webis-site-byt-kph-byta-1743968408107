@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { Link as ScrollLink } from 'react-scroll';
 
 interface NavItem {
   id: string;
@@ -69,20 +68,8 @@ const Header: React.FC = () => {
           <ul className="flex space-x-8 space-x-reverse">
             {navItems.map((item) => (
               <li key={item.id}>
-                <ScrollLink
-                  to={item.id}
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500}
-                  className={`cursor-pointer text-secondary hover:text-secondary/80 font-medium transition-colors px-2 py-1 ${
-                    activeSection === item.id
-                      ? 'border-b-2 border-secondary'
-                      : ''
-                  }`}
-                >
+               
                   {item.label}
-                </ScrollLink>
               </li>
             ))}
           </ul>
@@ -113,21 +100,7 @@ const Header: React.FC = () => {
         <ul className="flex flex-col items-center space-y-4 px-4">
           {navItems.map((item) => (
             <li key={item.id} className="w-full text-center">
-              <ScrollLink
-                to={item.id}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-                className={`block py-2 text-secondary hover:text-secondary/80 font-medium transition-colors ${
-                  activeSection === item.id
-                    ? 'border-r-4 border-secondary pr-2'
-                    : ''
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </ScrollLink>
+              
             </li>
           ))}
         </ul>
